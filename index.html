@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banners</title>
+    <style>
+      #stage {
+          padding: 40px;
+          z-index: 0;
+          overflow: auto;
+          display: flex;
+      }
+      iframe {
+        border: none
+      }
+      iframe + iframe {
+        margin-left: 48px;
+      }
+    </style>  
+  </head>
+  <body>
+    <div id="stage">
+      <iframe id="iframe" scrolling="no" src="./300-600.html" height="600" width="300"></iframe>
+      <iframe id="iframe2" scrolling="no" src="./320-250.html" height="250" width="320"></iframe>
+      <iframe id="iframe3" scrolling="no" src="./3-2.html" height="400" width="600"></iframe>
+    </div>
+  </body>
+</html>
